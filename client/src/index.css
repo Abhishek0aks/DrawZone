@@ -1,0 +1,99 @@
+:root {
+  /* Design tokens (palette from the project brief) */
+  --navy: #172033;
+  --violet: #6c5ce7;
+  --violet-dark: #5546d6;
+  --purple: #8b7cf6;
+  --violet-tint: #edeafd;
+  --mint: #36c9a5;
+  --mint-tint: #e3f8f2;
+  --bg: #f7f8fc;
+  --surface: #ffffff;
+  --text: #20283a;
+  --text-soft: #5d6679; /* darker than #717B90 so small text keeps 4.5:1 contrast on white */
+  --error: #d9485f;
+  --error-tint: #fdecef;
+  --success: #16845f;
+  --border: #dfe3ee;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: 0 1px 2px rgba(23, 32, 51, 0.06), 0 4px 14px rgba(23, 32, 51, 0.05);
+  --control-h: 44px;
+
+  --font: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+p,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+}
+h1 {
+  font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+h2 {
+  font-size: 1.15rem;
+  color: var(--navy);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--purple);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
