@@ -94,7 +94,38 @@ See `docs/SETUP_AND_TROUBLESHOOTING.md` (`EADDRINUSE`, npm JSON errors, PowerShe
 
 ## Screenshots
 
-_Placeholders only. Add real screenshots after running the app:_ Home, Lobby, Game, Round summary, Final results.
+<details>
+<summary>View all 11 screenshots</summary>
+
+### Room entry
+
+<img src="docs/screenshots/home-page.png" width="640" alt="DrawZone home page">
+
+<img src="docs/screenshots/join-room.png" width="640" alt="Joining a room with a room code">
+
+### Gameplay
+
+<img src="docs/screenshots/word-selection.png" width="640" alt="Drawer choosing a word">
+
+<img src="docs/screenshots/drawing-start.png" width="640" alt="Drawing board and tools">
+
+<img src="docs/screenshots/drawing-in-progress.png" width="640" alt="Drawing in progress">
+
+<img src="docs/screenshots/guess-entry.png" width="640" alt="Player entering a guess">
+
+<img src="docs/screenshots/correct-guess.png" width="640" alt="Correct guess and updated scores">
+
+### Round and game results
+
+<img src="docs/screenshots/round-summary-spider.png" width="640" alt="Round summary after the spider drawing">
+
+<img src="docs/screenshots/round-summary-apple.png" width="640" alt="Round summary with points awarded for correct guesses">
+
+<img src="docs/screenshots/leave-confirmation.png" width="640" alt="Leave game confirmation dialog">
+
+<img src="docs/screenshots/final-results.png" width="640" alt="Final game results">
+
+</details>
 
 ## Limitations
 
