@@ -2,7 +2,11 @@
 
 A real-time multiplayer drawing and guessing game for the browser. Create a private room, share the 5-character room code, take turns drawing a secret word while the other players guess it.
 
-> **Honest status:** the server game logic is covered by 39 automated tests that pass (run against an in-memory fake of Socket.IO). The React client, the real-socket integration tests and the multiplayer behaviour in a real browser **have not been run yet** by the author of this package (no internet/browser in the build environment). Follow `docs/TESTING.md` to verify on your computer. Nothing in this README claims more than that.
+## Live Demo
+
+[Play DrawZone](https://drawzone.onrender.com)
+
+> **Honest status:** the server game logic is covered by 39 automated tests that pass (run against an in-memory fake of Socket.IO). The author manually verified the deployed core multiplayer flow in two browser tabs. The client tests and real-socket integration tests have not been run. See `docs/TESTING.md` for test commands.
 
 ## Features
 
