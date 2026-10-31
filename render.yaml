@@ -2,6 +2,7 @@ services:
   - type: web
     name: drawzone
     runtime: node
+    plan: free
     buildCommand: npm ci --prefix client && npm run build --prefix client && npm ci --prefix server
     startCommand: npm start --prefix server
     healthCheckPath: /health
